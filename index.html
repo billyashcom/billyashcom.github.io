@@ -8,16 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My BillyAsh.com</h1>
+        <h1>Welcome to BillyAsh.com</h1>
         <p>If you need to reach out, you can leave a message below.</p>
-        <form action="https://formspree.io/billyash.com@gmail.com" method="POST">
+        <form action="https://formspree.io/f/mgonvab" method="POST" enctype="multipart/form-data">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required> 
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
+            </textarea> <label for="file">Upload files if needed:</label>
+            <input type="file" id="file" name="file" multiple>
+            <input type="hidden" name="_cc" value="billyash.com"gmail.com,abidshussain@gmail.com">
+            <button type="submit">Send Feedback</button>
         </form>
     </div>
 </body>
